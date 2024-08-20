@@ -2,12 +2,12 @@
  * @Author: Bill Bill@bill.com
  * @Date: 2022-07-07 19:54:24
  * @LastEditors: Bill Bill@bill.com
- * @LastEditTime: 2024-08-20 16:24:57
+ * @LastEditTime: 2024-08-20 16:33:49
  * @FilePath: /juejin/src/api/juejin.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
 const request = require('../utils/request');
-const { COOKIE,SPIDER,AID,UUID,SPIDER,MSTOKEN,A_BOGUS } =  require('../utils/config.js');
+const { COOKIE,SPIDER,AID,UUID,MSTOKEN,A_BOGUS } =  require('../utils/config.js');
 
 module.exports = function () {
   return {
