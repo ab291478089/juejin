@@ -16,12 +16,14 @@ if(!COOKIE) {
 } else {
   async function junJin() {
     try {
+      console.log('开始执行');
       // 先执行签到、抽奖以及沾喜气
       await jueJinApi.checkIn(); // 抽奖一次
       const drawResult = await jueJinApi.drawApi();
-      message(`抽奖成功，获得：${drawResult.lottery_name}`);
+      console.log('执行结束',drawResult);
+
     } catch (e) {
-      message(`有异常，请手动操作,${e.message}`);
+      console.log('执行异常',e);
     }
   }
   junJin().then(() => {});
